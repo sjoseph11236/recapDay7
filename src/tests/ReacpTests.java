@@ -21,11 +21,17 @@ class ReacpTests {
 	void testCircumference() {
 		int radius = 4; 
 //		expected
-		double expected = 2 * Math.PI * radius; 
+		double expect = 2 * Math.PI * radius; 
 //		actual 
 		double actual = calc.circumference(radius);
 //		verify
-		assertEquals(actual, expected, "Doesnt give the right circumference");
+		assertEquals(actual, expect, "Doesnt give the right circumference");
 	}
-
+	
+	@Test
+	void testAdd() {
+		int expect = 2; 
+		int actual = calc.add(1,1);
+		assertEquals(actual, expect);	
+	}
 }
