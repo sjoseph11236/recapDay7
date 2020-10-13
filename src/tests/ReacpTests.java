@@ -1,6 +1,6 @@
 package tests;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,5 +33,10 @@ class ReacpTests {
 		int expect = 2; 
 		int actual = calc.add(1,1);
 		assertEquals(actual, expect);	
+	}
+	
+	@Test 
+	void testSubtract() {
+		fail("This test will fail");
 	}
 }
